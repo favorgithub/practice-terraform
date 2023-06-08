@@ -15,7 +15,6 @@ output "sample1" {
  value = var.sample1
 }
 
-output "sample-txt" {
+output "sample-ext" {
   value = "Value of Sample - ${var.sample}"
-
 }
