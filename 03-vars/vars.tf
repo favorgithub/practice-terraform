@@ -16,6 +16,6 @@ output "sample1" {
 }
 
 output "sample-txt" {
-  value = ${var.sample}
+  value = "Value of Sample - ${var.sample}
 
 }
