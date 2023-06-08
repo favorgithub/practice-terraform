@@ -6,4 +6,3 @@ output "sample1" {
   value = 1000
 
 }
-
