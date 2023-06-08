@@ -58,11 +58,11 @@ output "course" {
  value = var.course
 }
 
-output "course" {
+output "courses" {
  value = var.courses
 }
 
 
-output "course" {
+output "course_details" {
  value = var.course_details
 }
