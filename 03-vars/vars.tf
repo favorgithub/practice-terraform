@@ -15,9 +15,26 @@ output "sample1" {
  value = var.sample1
 }
 
+## sometimes if variable/any reference with the combination of some other string then we have to access those in ${}
+
+
 output "sample-ext" {
   value = "Value of Sample - ${var.sample}"
 }
+
+
+## Variable Data Types
+# 1. String
+# 2. number
+# 3. Boolean
+
+##variable Types
+# In Ansible - 1. Plain key, Value, 2. List 3. Map/Dictionary
+
+## In Terraform
+# 1. Plain
+# 2. List
+# 3. Map
 
 ##Plain
 
