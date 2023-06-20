@@ -1,5 +1,5 @@
 ## Datasource is if you want to find out certain things that are already existing in your account in Amazon
-## The autentication to amazon also comes into picture because it has to autenticate to amaazon and get the things
+## The authentication to amazon also comes into picture because it has to autenticate to amaazon and get the things
 ## Do a google search for the instance price terraform datasource to get the price of a particular instance
 ## Any resource in terraform you will see the argument and Attribute
 ## You have to look at the required argument and attribute
@@ -36,7 +36,7 @@ output "sgid" {
 }
 
 data "aws_ami" "example" {
-  owners = ["amazon"]
+  owners = ["973714476881"]
   most_recent      = true
   name_regex       = "Centos-8-DevOps-Practice"
 
