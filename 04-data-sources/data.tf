@@ -6,6 +6,9 @@
 ## Argument means the things that you need to provide .e.g the instance type, avaialabily zone, filter
 ## When the Argument is run, it expose some data and that data that it exposes is called attribute reference
 ## search google for "aws security group data source terraform" we know the name of the security group but we want the id
+## you want to find out an existing information of amazon then you use datasource
+## You can also use data source to find out the Ami id google "aws Ami id datasource terraform"
+## executable user is amazon self means your own images
 
 
 
@@ -30,4 +33,15 @@ data "aws_security_group" "selected" {
 
 output "sgid" {
   value = date.aws_security_group.selected.id
+}
+
+data "aws_ami" "example" {
+  owners = ["amazon"]
+  most_recent      = true
+  name_regex       = "Centos-8-DevOps-Practice"
+
+}
+
+output "ami" {
+ value = data.aws_ami.example.id
 }
